@@ -1,0 +1,8 @@
+<div class="parent">
+  <div class="input-div">
+    <span>Hex Code: </span>
+    <input maxlength="6" value="0000cc" (input)="onChange(colorName)" #colorName type="text"/>
+    
+  </div>
+  <p *ngIf="invalid" class="error">Invalid hex code</p>
+</div>

@@ -1,0 +1,26 @@
+.parent {
+  height: 100vh;
+  width: 50vw;
+}
+.input-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+}
+.input-div span {
+  font-weight: bold;
+}
+.input-div input{
+    color: #0000cc;
+    font-weight: 500;
+}
+.error{
+  color: red;
+  text-align: center;
+  font-weight: 500;
+}
+@media(max-width:572px){
+    .input-div input{
+        width: 100px;
+    }
+}

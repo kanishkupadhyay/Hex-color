@@ -15,8 +15,5 @@ export class LeftSlideComponent {
     if (colorName.value == '') {
       this.service.color.next('#0000cc')
     }
-if(colorName.value.includes('z')){
-  this.invalid=true
-}
   }
 }

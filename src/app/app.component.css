@@ -1,4 +1,9 @@
 .parent {
+  margin:15vh auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 70vh;
+  box-shadow: 3px 3px 9px grey;
 }

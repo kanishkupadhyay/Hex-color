@@ -6,5 +6,5 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DesignService {
 
-  color=new BehaviorSubject('#0000cc')
+  color = new BehaviorSubject('#0000cc')
 }

@@ -8,21 +8,20 @@
 .input-div span {
   font-weight: bold;
 }
-.input-div input{
-    color: #0000cc;
-    font-weight: 500;
-    margin-left: 20px;
+.input-div input {
+  color: #0000cc;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
-.error{
+.error {
   color: red;
   text-align: center;
   font-weight: 500;
   margin-left: 20px;
-
 }
-@media(max-width:572px){
-    .input-div input{
-        width: 100px;
-    }
+@media (max-width: 572px) {
+  .input-div input {
+    width: 100px;
+  }
 }

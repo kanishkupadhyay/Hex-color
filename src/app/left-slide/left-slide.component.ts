@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 import { DesignService } from '../service/design.service';
 
 @Component({
@@ -9,12 +10,14 @@ import { DesignService } from '../service/design.service';
 export class LeftSlideComponent {
   invalid: boolean = false;
   pattern = /^#([\da-f]{3}){1,2}$|^#([\da-f]{4}){1,2}$/i;
+  @Output() changeBg=new EventEmitter()
 
-  constructor(private service: DesignService) { }
+  // constructor(private service: DesignService) { }
 
   onChange({ value }) {
     const colorCode = `#${value}`;
     this.invalid = !this.pattern.test(colorCode);
-    this.service.color.next(colorCode)
+    // this.service.color.next(colorCode)
+    this.changeBg.emit(colorCode)
   }
 }

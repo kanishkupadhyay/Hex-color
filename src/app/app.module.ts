@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { LeftSlideComponent } from './left-slide/left-slide.component';
 import { RightSlideComponent } from './right-slide/right-slide.component'
+import{FormsModule}from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { RightSlideComponent } from './right-slide/right-slide.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

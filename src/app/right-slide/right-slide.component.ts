@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, Input, ViewChild } from '@angular/core';
 import { DesignService } from '../service/design.service';
 
 @Component({
@@ -6,13 +6,10 @@ import { DesignService } from '../service/design.service';
   templateUrl: './right-slide.component.html',
   styleUrls: ['./right-slide.component.css']
 })
-export class RightSlideComponent implements AfterViewInit {
+export class RightSlideComponent {
 
   constructor(private service: DesignService) { }
-
-  @ViewChild('box') box
-  ngAfterViewInit() {
-    this.service.color.subscribe(data => this.box.nativeElement.style.background = data)
-  }
-
+  @Input()dynColor='#0000cc'
+  // @ViewChild('box') box
+  
 }

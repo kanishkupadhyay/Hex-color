@@ -1,4 +1,4 @@
 <div class="parent">
-  <app-left-slide></app-left-slide>
-  <app-right-slide></app-right-slide>
+  <app-left-slide (changeBg)="changeBg($event)"></app-left-slide>
+  <app-right-slide [dynColor]='color'></app-right-slide>
 </div>
